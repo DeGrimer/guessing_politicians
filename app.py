@@ -75,7 +75,7 @@ def view():
         print(end["имя"])
         database.remove(end)
         print('\n | False \n\\ /\n')
-    if(database != 0):
+    if(len(database) != 0):
         print(database[0]['имя'])
 def take_chance(answer, property):
     if answer == "t":
@@ -106,3 +106,5 @@ elif mod == "view":
     view()
 elif mod == "append":
     append()
+
+input()
